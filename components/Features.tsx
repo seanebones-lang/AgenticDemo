@@ -79,33 +79,50 @@ export default function Features() {
             <span className="text-primary-700 font-semibold text-sm">Proprietary Technology</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Enterprise-Grade Features
+            What You Get: Complete System
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Production-ready components built for autonomous AI systems with enterprise requirements
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+            Every component you need to build and deploy autonomous AI agents in production
           </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <a href="https://github.com/seanebones-lang/Agentic-AI" target="_blank" rel="noopener noreferrer" 
+               className="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">
+              Browse Source Code →
+            </a>
+            <a href="#demo" className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition">
+              Try Live Demo →
+            </a>
+            <a href="https://bizbot.store" target="_blank" rel="noopener noreferrer"
+               className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+              Acquisition Inquiry →
+            </a>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <motion.div
+            <motion.a
               key={feature.title}
+              href={index === 0 ? "#architecture" : index === 1 ? "#demo" : index === 2 ? "#use-cases" : "#architecture"}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100"
+              className="p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition border border-gray-100 cursor-pointer group"
             >
-              <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4`}>
+              <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition`}>
                 <feature.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition">
                 {feature.title}
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-gray-600 mb-3">
                 {feature.description}
               </p>
-            </motion.div>
+              <div className="text-xs text-primary-600 font-semibold group-hover:underline">
+                Learn more →
+              </div>
+            </motion.a>
           ))}
         </div>
 

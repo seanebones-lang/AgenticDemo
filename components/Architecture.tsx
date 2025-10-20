@@ -78,11 +78,25 @@ export default function Architecture() {
             <span className="text-primary-700 font-semibold text-sm">System Architecture</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Production Architecture
+            How It Works: System Architecture
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Modular, scalable, and cloud-native architecture designed for enterprise deployment
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+            Modular, scalable, cloud-native architecture. Every layer is production-tested and documented.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <a href="https://github.com/seanebones-lang/Agentic-AI/tree/main/agents" target="_blank" rel="noopener noreferrer"
+               className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+              View Agent Code →
+            </a>
+            <a href="https://github.com/seanebones-lang/Agentic-AI/tree/main/api" target="_blank" rel="noopener noreferrer"
+               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+              View API Code →
+            </a>
+            <a href="https://github.com/seanebones-lang/Agentic-AI/tree/main/deployment" target="_blank" rel="noopener noreferrer"
+               className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+              View AWS Templates →
+            </a>
+          </div>
         </motion.div>
 
         {/* Architecture Layers */}

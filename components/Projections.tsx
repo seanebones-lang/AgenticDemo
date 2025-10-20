@@ -107,10 +107,14 @@ export default function Projections() {
             <span className="text-primary-700 font-semibold text-sm">Market Analysis</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Industry Projections
+            Market Opportunity & ROI
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The future of autonomous AI agents and their transformative impact on enterprise operations
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-2">
+            Why this technology is valuable: Market data shows explosive growth in agentic AI adoption
+          </p>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto bg-green-50 p-3 rounded-lg border-2 border-green-200">
+            <strong>For Buyers:</strong> Early movers in this space are seeing 6-12 month ROI with 40-60% productivity gains. 
+            This is a $142B market by 2030.
           </p>
         </motion.div>
 

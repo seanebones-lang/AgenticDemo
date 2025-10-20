@@ -59,11 +59,20 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto"
           >
             Production-ready framework for building autonomous AI agents with advanced reasoning chains, 
             human-in-the-loop oversight, and enterprise-grade deployment infrastructure.
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35 }}
+            className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto bg-blue-50 p-4 rounded-lg border-2 border-blue-200"
+          >
+            <strong>What This Is:</strong> A complete, production-ready codebase (6,900+ lines) for building AI agents that can autonomously execute complex tasks, 
+            integrate with your systems, and escalate to humans when needed. Includes FastAPI backend, AWS deployment templates, and full documentation.
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -77,11 +86,22 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg hover:shadow-xl inline-block"
             >
-              Acquisition Inquiry
+              Acquisition Inquiry at bizbot.store
             </a>
-            <button className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-50 transition border-2 border-gray-200">
-              View Documentation
-            </button>
+            <a
+              href="#demo"
+              className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-50 transition border-2 border-gray-200"
+            >
+              Try Interactive Demo
+            </a>
+            <a
+              href="https://github.com/seanebones-lang/Agentic-AI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition"
+            >
+              View Source Code
+            </a>
           </motion.div>
 
           {/* Key Stats */}

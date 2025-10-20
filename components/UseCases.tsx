@@ -101,10 +101,13 @@ export default function UseCases() {
             <span className="text-primary-700 font-semibold text-sm">Real-World Applications</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What You Can Build
+            Real-World Applications
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transform your operations with autonomous AI agents across multiple domains
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-2">
+            These aren't hypothetical - buyers can deploy these exact use cases immediately
+          </p>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto bg-yellow-50 p-3 rounded-lg border-2 border-yellow-200">
+            <strong>Each use case includes:</strong> Pre-built agent templates, tool integrations, HITL checkpoints, and deployment configs
           </p>
         </motion.div>
 
@@ -116,9 +119,9 @@ export default function UseCases() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-xl transition p-8 border border-gray-100"
+              className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition p-8 border border-gray-100 group"
             >
-              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${useCase.color} flex items-center justify-center mb-6`}>
+              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${useCase.color} flex items-center justify-center mb-6 group-hover:scale-110 transition`}>
                 <useCase.icon className="w-7 h-7 text-white" />
               </div>
               
@@ -126,18 +129,30 @@ export default function UseCases() {
                 {useCase.title}
               </h3>
               
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-4">
                 {useCase.description}
               </p>
               
+              <div className="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                <div className="text-xs font-semibold text-blue-900 mb-1">INCLUDED IN CODEBASE:</div>
+                <div className="text-xs text-blue-700">Agent template + Tools + Examples</div>
+              </div>
+              
               <div className="space-y-2">
-                <div className="text-sm font-semibold text-gray-700 mb-3">Key Features:</div>
+                <div className="text-sm font-semibold text-gray-700 mb-3">Capabilities:</div>
                 {useCase.features.map((feature) => (
                   <div key={feature} className="flex items-start text-sm text-gray-600">
                     <span className="text-primary-500 mr-2 mt-1">✓</span>
                     <span>{feature}</span>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-6 pt-4 border-t border-gray-200">
+                <a href="https://github.com/seanebones-lang/Agentic-AI/tree/main/examples" target="_blank" rel="noopener noreferrer"
+                   className="text-sm text-primary-600 hover:text-primary-700 font-semibold group-hover:underline">
+                  View Example Code →
+                </a>
               </div>
             </motion.div>
           ))}

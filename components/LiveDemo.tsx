@@ -83,10 +83,13 @@ export default function LiveDemo() {
             <span className="text-primary-300 font-semibold text-sm">Interactive Demonstration</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            See It In Action
+            Interactive Demo: See It Work
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Watch how autonomous agents execute complex workflows with human oversight
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-2">
+            This simulates how the actual system executes multi-step workflows with HITL checkpoints
+          </p>
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto bg-white/10 p-3 rounded-lg border border-white/20">
+            <strong>Try it:</strong> Select a scenario below and click "Run Demo" to see step-by-step execution with human approval gates
           </p>
         </motion.div>
 
