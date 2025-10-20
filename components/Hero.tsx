@@ -74,35 +74,36 @@ export default function Hero() {
             integrate with your systems, and escalate to humans when needed. Includes FastAPI backend, AWS deployment templates, and full documentation.
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12"
-          >
-            <a 
-              href="https://bizbot.store" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg hover:shadow-xl inline-block"
-            >
-              Acquisition Inquiry at bizbot.store
-            </a>
-            <a
-              href="#demo"
-              className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-50 transition border-2 border-gray-200"
-            >
-              Try Interactive Demo
-            </a>
-            <a
-              href="https://github.com/seanebones-lang/Agentic-AI"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition"
-            >
-              View Source Code
-            </a>
-          </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+        className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12"
+      >
+        <a 
+          href="https://bizbot.store" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-bold hover:from-indigo-700 hover:to-purple-700 transition shadow-2xl hover:shadow-3xl hover:scale-105 inline-flex items-center space-x-2 transform"
+        >
+          <span>Acquisition Inquiry at bizbot.store</span>
+          <span className="text-2xl">→</span>
+        </a>
+        <a
+          href="#playground"
+          className="px-8 py-4 bg-white text-gray-900 rounded-lg font-bold hover:bg-gray-50 transition border-2 border-indigo-300 hover:border-indigo-500 shadow-lg hover:scale-105 transform"
+        >
+          Try Interactive AI Demo
+        </a>
+        <a
+          href="https://github.com/seanebones-lang/Agentic-AI"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-4 bg-gray-900 text-white rounded-lg font-bold hover:bg-gray-800 transition shadow-lg hover:scale-105 transform"
+        >
+          View Source Code (6,900+ Lines)
+        </a>
+      </motion.div>
 
           {/* Key Stats */}
           <motion.div
